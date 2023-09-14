@@ -17,3 +17,16 @@ So, the first few numbers in the Fibonacci series look like this:
 Each number in the series (starting from the third number) is the sum of the two numbers immediately before it.
  For example, 2 is the sum of 1 and 1, 3 is the sum of 1 and 2, 5 is the sum of 2 and 3, and so on. 
  This pattern continues indefinitely, creating a unique sequence of numbers with many interesting mathematical properties.'''
+
+def generate_fibonacci(n):
+    x = 0
+    y = 1
+    while x <= n:
+        print(x)
+        z = x + y
+        x = y
+        y = z
+
+# You can call the function and pass 'n' as the argument to generate the series.
+n = int(input('Enter a number: '))
+generate_fibonacci(n)
